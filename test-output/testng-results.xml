@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-31T15:55:28 CEST" name="Default suite" finished-at="2026-08-31T15:55:34 CEST" duration-ms="5231">
+    <groups>
+    </groups>
+    <test started-at="2026-08-31T15:55:28 CEST" name="Default test" finished-at="2026-08-31T15:55:34 CEST" duration-ms="5231">
+      <class name="com.api.tests.UserDetailsApi">
+        <test-method signature="UserDetailsApiTest()[pri:0, instance:com.api.tests.UserDetailsApi@1ddf84b8]" started-at="2026-08-31T15:55:33 CEST" name="UserDetailsApiTest" finished-at="2026-08-31T15:55:34 CEST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserDetailsApiTest -->
+      </class> <!-- com.api.tests.UserDetailsApi -->
+      <class name="com.api.tests.LoginApiTest">
+        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginApiTest@1700915]" started-at="2026-08-31T15:55:29 CEST" name="loginApiTest" finished-at="2026-08-31T15:55:33 CEST" duration-ms="4549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApiTest -->
+      </class> <!-- com.api.tests.LoginApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
