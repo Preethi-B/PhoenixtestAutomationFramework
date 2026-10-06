@@ -5,6 +5,11 @@ import com.api.pojo.Usercredentials;
 
 import io.restassured.http.ContentType;
 public class AuthTokenProvider {
+	
+	
+	private AuthTokenProvider(){
+		
+	}
 
 	public static String getToken(String role) {
 

@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-10T21:00:49 CEST" name="Phoenix API Test suite" finished-at="2026-09-10T21:00:56 CEST" duration-ms="6736">
+  <suite started-at="2026-09-26T15:58:56 CEST" name="Phoenix API Test suite" finished-at="2026-09-26T15:59:03 CEST" duration-ms="6922">
     <groups>
     </groups>
-    <test started-at="2026-09-10T21:00:49 CEST" name="In Warranty Flow Test" finished-at="2026-09-10T21:00:56 CEST" duration-ms="6736">
+    <test started-at="2026-09-26T15:58:56 CEST" name="In Warranty Flow Test" finished-at="2026-09-26T15:59:03 CEST" duration-ms="6922">
       <class name="com.api.tests.MasterAPI">
-        <test-method signature="masterAPItest()[pri:0, instance:com.api.tests.MasterAPI@5e82df6a]" started-at="2026-09-10T21:00:55 CEST" name="masterAPItest" finished-at="2026-09-10T21:00:56 CEST" duration-ms="897" status="PASS">
+        <test-method signature="masterAPItest()[pri:0, instance:com.api.tests.MasterAPI@5e82df6a]" started-at="2026-09-26T15:59:02 CEST" name="masterAPItest" finished-at="2026-09-26T15:59:03 CEST" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- masterAPItest -->
       </class> <!-- com.api.tests.MasterAPI -->
       <class name="com.api.tests.CountAPITest">
-        <test-method signature="CountAPIResponse_Missing()[pri:0, instance:com.api.tests.CountAPITest@7a69b07]" started-at="2026-09-10T21:00:53 CEST" name="CountAPIResponse_Missing" finished-at="2026-09-10T21:00:54 CEST" duration-ms="503" status="PASS">
+        <test-method signature="CountAPIResponse_Missing()[pri:0, instance:com.api.tests.CountAPITest@7a69b07]" started-at="2026-09-26T15:59:01 CEST" name="CountAPIResponse_Missing" finished-at="2026-09-26T15:59:01 CEST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountAPIResponse_Missing -->
-        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.api.tests.CountAPITest@7a69b07]" started-at="2026-09-10T21:00:54 CEST" name="verifyCountAPIResponse" finished-at="2026-09-10T21:00:55 CEST" duration-ms="892" status="PASS">
+        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.api.tests.CountAPITest@7a69b07]" started-at="2026-09-26T15:59:01 CEST" name="verifyCountAPIResponse" finished-at="2026-09-26T15:59:02 CEST" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCountAPIResponse -->
       </class> <!-- com.api.tests.CountAPITest -->
       <class name="com.api.tests.UserDetailsApi">
-        <test-method signature="UserDetailsApiTest()[pri:0, instance:com.api.tests.UserDetailsApi@1139b2f3]" started-at="2026-09-10T21:00:52 CEST" name="UserDetailsApiTest" finished-at="2026-09-10T21:00:53 CEST" duration-ms="929" status="PASS">
+        <test-method signature="UserDetailsApiTest()[pri:0, instance:com.api.tests.UserDetailsApi@1139b2f3]" started-at="2026-09-26T15:59:00 CEST" name="UserDetailsApiTest" finished-at="2026-09-26T15:59:01 CEST" duration-ms="947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserDetailsApiTest -->
       </class> <!-- com.api.tests.UserDetailsApi -->
       <class name="com.api.tests.LoginApiTest">
-        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginApiTest@21de60b4]" started-at="2026-09-10T21:00:49 CEST" name="loginApiTest" finished-at="2026-09-10T21:00:52 CEST" duration-ms="3453" status="PASS">
+        <test-method signature="loginApiTest()[pri:0, instance:com.api.tests.LoginApiTest@21de60b4]" started-at="2026-09-26T15:58:56 CEST" name="loginApiTest" finished-at="2026-09-26T15:59:00 CEST" duration-ms="3656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApiTest -->
