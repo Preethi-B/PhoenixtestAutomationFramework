@@ -4,6 +4,10 @@ import static io.restassured.RestAssured.given;
 
 import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
+import com.api.constant.Role;
+import com.api.constant.Role;
+import com.api.utils.Specutil;
+import static com.api.constant.Role.FD;
 
 import static com.api.utils.AuthTokenProvider.*;
 import static  com.api.utils.ConfigManager.*;
@@ -18,14 +22,11 @@ public class CountAPITest {
 		
 	
 		
-		given().baseUri(getProperty("BASE_URI"))
-		.and()
-		.header("Authorization",getToken("FD"))
+		given().spec(Specutil.requestSpectwithAuth(FD))
 		.when()
 		.get("dashboard/count")
 		.then()
-		.log().all()
-		.statusCode(200)
+		.spec(Specutil.responseSpec_OK())
 		.body("message", equalTo("Success"))
 		.time(lessThan(1000L))
 		.body("data", notNullValue())
@@ -49,9 +50,6 @@ public class CountAPITest {
 		.when()
 		.get("dashboard/count")
 		.then()
-		.log().all()
-		.log().headers()
-		.log().body()
-		.statusCode(401);
+		.spec(Specutil.responseSpec_Text(401));
 }
 }

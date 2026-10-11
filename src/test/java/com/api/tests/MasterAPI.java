@@ -8,11 +8,15 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import com.api.utils.AuthTokenProvider;
+import com.api.utils.Specutil;
+
 import static  com.api.utils.ConfigManager.*;
+
+import com.api.constant.*;
 
 import static com.api.utils.AuthTokenProvider.*;
 import static  com.api.utils.ConfigManager.*;
-
+import static com.api.constant.Role.FD;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 public class MasterAPI {
@@ -21,17 +25,11 @@ public class MasterAPI {
 	
 	public void masterAPItest() {
 		
-		given().baseUri(getProperty("BASE_URI"))
-		.and()
-		.header("Authorization",getToken("FD"))
-		.log().all()
-		.contentType("")
+		given().spec(Specutil.requestSpectwithAuth(FD))
 		.when()
 		.post("master")
 		.then()
-		.log().all()
-		.statusCode(200)
-		.time(lessThan(1000L))
+		.spec(Specutil.responseSpec_OK())
 		.body("message", equalTo("Success"))
 		.body("data", notNullValue());
 		

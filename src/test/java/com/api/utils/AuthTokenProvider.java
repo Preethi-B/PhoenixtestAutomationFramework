@@ -1,8 +1,9 @@
 package com.api.utils;
 import static io.restassured.RestAssured.*;
 
+import com.api.constant.Role;
 import com.api.pojo.Usercredentials;
-
+import static com.api.constant.Role.*;
 import io.restassured.http.ContentType;
 public class AuthTokenProvider {
 	
@@ -11,19 +12,19 @@ public class AuthTokenProvider {
 		
 	}
 
-	public static String getToken(String role) {
+	public static String getToken(Role role) {
 
 	    Usercredentials usercredentials = null;
 
-	    if (role.equalsIgnoreCase("FD")) {
+	    if (role == FD ){
 	        usercredentials = new Usercredentials("iamfd", "password");
 	    }
 	    
-	    else if(role.equalsIgnoreCase("SUP")){
+	    else if(role==SUP){
 	    	
 	    	 usercredentials = new Usercredentials("iamsup", "password");
 	    }
-	    else if(role.equalsIgnoreCase("ENG")) {
+	    else if(role==ENG) {
 	    	 usercredentials = new Usercredentials("iameng", "password");
 	    
 	}
