@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.api.pojo.Usercredentials;
 import com.api.utils.ConfigManager;
+import com.api.utils.Specutil;
 
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -24,21 +25,11 @@ public class LoginApiTest {
 		
 		Usercredentials usercredentials = new Usercredentials("iamfd","password");
 		
-		given().baseUri(ConfigManager.getProperty("BASE_URI"))
-		.and()
-		.contentType(ContentType.JSON)
-		.and()
-		.accept(ContentType.JSON)
-		.body(usercredentials)
-		.log().uri()
-		.log().body()
-		.log().headers()
-		.log().method()
+		given().spec(Specutil.requestSpec(usercredentials))
 		.when()
 		.post("login")
 		.then()
-		.log().all()
-		.time(lessThan(1500L))
+		.spec(Specutil.responseSpec_OK())
 		.and()
 		.body("message", equalTo("Success"))
 		.and()
